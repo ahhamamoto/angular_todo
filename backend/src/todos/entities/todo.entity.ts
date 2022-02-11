@@ -17,6 +17,12 @@ export class TodosEntity {
   @Column()
   content: string;
 
+  @Column({ default: null })
+  dueAt: Date;
+
+  @Column({ default: null })
+  completedAt: Date;
+
   @CreateDateColumn()
   createdAt: Date;
 

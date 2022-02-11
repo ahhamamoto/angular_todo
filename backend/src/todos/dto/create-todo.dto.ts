@@ -6,4 +6,10 @@ export class CreateTodoDto {
 
   @ApiProperty()
   content: string;
+
+  @ApiProperty()
+  dueAt: Date;
+
+  @ApiProperty()
+  completedAt: Date;
 }
