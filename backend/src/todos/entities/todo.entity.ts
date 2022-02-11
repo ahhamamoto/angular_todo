@@ -17,9 +17,15 @@ export class TodosEntity {
   @Column()
   content: string;
 
+  @Column({ default: null })
+  due_at: Date;
+
+  @Column({ default: null })
+  completed_at: Date;
+
   @CreateDateColumn()
-  createdAt: Date;
+  created_at: Date;
 
   @UpdateDateColumn()
-  updatedAt: Date;
+  updated_at: Date;
 }
