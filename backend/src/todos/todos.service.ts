@@ -18,8 +18,8 @@ export class TodosService {
 
     newTodo.title = createTodoDto.title;
     newTodo.content = createTodoDto.content;
-    newTodo.dueAt = createTodoDto.dueAt;
-    newTodo.completedAt = createTodoDto.completedAt;
+    newTodo.due_at = createTodoDto.due_at;
+    newTodo.completed_at = createTodoDto.completed_at;
 
     // == saves the todo to db ==
     await this._todosRepository.save(newTodo);
@@ -40,8 +40,8 @@ export class TodosService {
 
     todo.content = updateTodoDto.content;
     todo.title = updateTodoDto.title;
-    todo.dueAt = updateTodoDto.dueAt;
-    todo.completedAt = updateTodoDto.completedAt;
+    todo.due_at = updateTodoDto.due_at;
+    todo.completed_at = updateTodoDto.completed_at;
 
     await this._todosRepository.save(todo);
     return todo;

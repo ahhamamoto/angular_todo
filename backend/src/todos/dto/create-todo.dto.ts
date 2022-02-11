@@ -8,8 +8,8 @@ export class CreateTodoDto {
   content: string;
 
   @ApiProperty()
-  dueAt: Date;
+  due_at: Date;
 
   @ApiProperty()
-  completedAt: Date;
+  completed_at: Date;
 }
